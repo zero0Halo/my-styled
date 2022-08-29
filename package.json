@@ -1,0 +1,34 @@
+{
+  "name": "my-styled",
+  "version": "0.0.1",
+  "description": "A combination of styled-system, styled-components and a little extra",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zero0Halo/my-styled.git"
+  },
+  "keywords": [
+    "styled",
+    "components"
+  ],
+  "author": "Steve Swanson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zero0Halo/my-styled/issues"
+  },
+  "homepage": "https://github.com/zero0Halo/my-styled#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^8.2.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-airbnb-base": "15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "prettier": "^2.7.1"
+  }
+}

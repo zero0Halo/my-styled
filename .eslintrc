@@ -1,0 +1,42 @@
+{
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "plugin:prettier/recommended",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "plugins": ["prettier", "react"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "default-param-last": "off", // changed
+    "no-debugger": "off", // changed
+    "no-nested-ternary": "off", // changed
+    "no-unused-vars": "warn",
+    "prettier/prettier": ["error"],
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react/forbid-prop-types": "off", // changed
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-indent-props": [2, 2], // changed
+    "react/jsx-indent": [2, 2], // changed
+    "react/jsx-no-bind": "off", // changed
+    "react/jsx-one-expression-per-line": [0],
+    "react/jsx-props-no-spreading": "off", // changed
+    "react/no-array-index-key": "off", // changed
+    "react/no-children-prop": "off", // changed
+    "react/prefer-stateless-function": [1],
+    "react/prop-types": "warn",
+    "react/require-default-props": "off", // changed
+    "react/static-property-placement": [1, "property assignment"]
+  }
+}
