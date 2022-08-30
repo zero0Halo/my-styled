@@ -1,9 +1,10 @@
 {
-  "name": "my-styled",
+  "name": "@zero0halo/my-styled",
   "version": "0.0.1",
   "description": "A combination of styled-system, styled-components and a little extra",
   "main": "index.js",
   "scripts": {
+    "publish": "npm publish --access=public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,7 +21,10 @@
     "url": "https://github.com/zero0Halo/my-styled/issues"
   },
   "homepage": "https://github.com/zero0Halo/my-styled#readme",
-  "dependencies": {},
+  "dependencies": {
+    "styled-components": "^5.3.5",
+    "styled-system": "^5.1.5"
+  },
   "devDependencies": {
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
