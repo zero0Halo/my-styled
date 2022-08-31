@@ -1,6 +1,6 @@
 {
   "name": "styled-components-system",
-  "version": "0.0.1",
+  "version": "0.0.5",
   "description": "A combination of styled-system, styled-components and a little extra",
   "main": "build/index.js",
   "type": "module",
