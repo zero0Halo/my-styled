@@ -3,7 +3,9 @@
   "version": "0.0.1",
   "description": "A combination of styled-system, styled-components and a little extra",
   "main": "index.js",
+  "type": "module",
   "scripts": {
+    "build": "node esbuild.config.js",
     "publish": "npm publish --access=public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -21,11 +23,9 @@
     "url": "https://github.com/zero0Halo/my-styled/issues"
   },
   "homepage": "https://github.com/zero0Halo/my-styled#readme",
-  "dependencies": {
-    "styled-components": "^5.3.5",
-    "styled-system": "^5.1.5"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "esbuild": "^0.15.6",
     "eslint": "^8.2.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-base": "15.0.0",
@@ -34,5 +34,9 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "^2.7.1"
+  },
+  "peerDependencies": {
+    "styled-components": "^5.3.5",
+    "styled-system": "^5.1.5"
   }
 }
