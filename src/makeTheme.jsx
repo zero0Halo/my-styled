@@ -9,7 +9,7 @@ export function makeTheme({ breakpoints: passedBreakpoints, xsOverride }) {
 
   // Then reduce the array down to only the values while simultaneously adding keys to the underlying object
   breakpoints = breakpoints.reduce((acc, [key, value]) => {
-    breakpoints[key] = `${value}px`;
+    acc[key] = `${value}px`;
     acc.push(`${value}px`);
     return acc;
   }, []);
