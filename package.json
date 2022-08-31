@@ -1,5 +1,5 @@
 {
-  "name": "my-styled",
+  "name": "@zero0halo/my-styled",
   "version": "0.0.1",
   "description": "A combination of styled-system, styled-components and a little extra",
   "main": "build/index.js",
