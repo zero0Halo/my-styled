@@ -2,7 +2,7 @@
 // It creates styled components that automatically tap into the theme.
 // It's not perfect, but it does 90% of what I need.
 
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import {
   border,
   color,
@@ -13,7 +13,7 @@ import {
   shadow,
   space,
   typography,
-} from 'styled-system';
+} from 'styled-system/dist';
 import styledSystemCss from './css';
 
 const myStyled = (node = 'div', args = {}, options) => {

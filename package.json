@@ -2,7 +2,7 @@
   "name": "@zero0halo/my-styled",
   "version": "0.0.1",
   "description": "A combination of styled-system, styled-components and a little extra",
-  "main": "index.js",
+  "main": "build/index.js",
   "type": "module",
   "scripts": {
     "build": "node esbuild.config.js",
