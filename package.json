@@ -1,9 +1,12 @@
 {
   "name": "styled-components-system",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A combination of styled-system, styled-components and a little extra",
-  "main": "build/index.js",
+  "main": "dist/index.js",
   "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "build": "node esbuild.config.js",
     "publish": "npm publish --access=public",

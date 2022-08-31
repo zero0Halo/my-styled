@@ -9,7 +9,7 @@ esbuild
     loader: { '.js': 'js', '.jsx': 'jsx' },
     target: 'es2015',
     minify: true,
-    outdir: 'build',
+    outdir: 'dist',
     sourcemap: true,
   })
   .catch(() => process.exit(1));
