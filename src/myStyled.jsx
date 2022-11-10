@@ -8,11 +8,13 @@ import {
   color,
   compose,
   flexbox,
+  grid,
   layout,
   position,
   shadow,
   space,
   typography,
+
 } from 'styled-system/dist';
 import styledSystemCss from './css';
 
@@ -29,6 +31,7 @@ const myStyled = (node = 'div', args = {}, options) => {
       border,
       color,
       flexbox,
+      grid,
       layout,
       position,
       shadow,
