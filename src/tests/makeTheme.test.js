@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { makeTheme } from './makeTheme';
+import { makeTheme } from '../makeTheme';
 
 describe('makeTheme', () => {
   it('adds an xs breakpoint at 0', () => {

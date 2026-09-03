@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { render } from '@testing-library/react';
-import { makeTheme } from './makeTheme';
-import myStyled from './myStyled';
+import { makeTheme } from '../makeTheme';
+import myStyled from '../myStyled';
 
 describe('myStyled', () => {
   it('renders a div by default', () => {
@@ -95,5 +95,17 @@ describe('myStyled', () => {
     expect(styles).toContain('font-size:16px');
     expect(styles).toContain('min-width:768px');
     expect(styles).toContain('font-size:20px');
+  });
+
+  it('supports args as a function of props', () => {
+    const Component = myStyled('div', ({ active }) => ({
+      opacity: active ? 1 : 0.5,
+    }));
+
+    const { container } = render(<Component active />);
+
+    expect(container.firstChild).toHaveStyle({
+      opacity: '1',
+    });
   });
 });

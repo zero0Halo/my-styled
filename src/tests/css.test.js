@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import css, { get, responsive } from './css';
-import { makeTheme } from './makeTheme';
+import css, { get, responsive } from '../css';
+import { makeTheme } from '../makeTheme';
 
 describe('get', () => {
   it('gets a nested value by path', () => {
@@ -72,6 +72,27 @@ describe('responsive', () => {
       },
       '@media screen and (min-width: 768px)': {
         fontSize: '20px',
+      },
+    });
+  });
+
+  it('preserves non-breakpoint object values', () => {
+    const theme = makeTheme({
+      breakpoints: {
+        sm: 576,
+        md: 768,
+      },
+    });
+
+    const result = responsive({
+      '&:hover': {
+        color: 'red',
+      },
+    })(theme);
+
+    expect(result).toEqual({
+      '&:hover': {
+        color: 'red',
       },
     });
   });
